@@ -24,10 +24,46 @@ Captured at 16:9 so they upload without complaint.
 Play requires **2–8** phone screenshots. All five are usable; `01` and `02` are the
 strongest openers because they show the app actually doing something.
 
-### Still needed (Play requires these, and they are design work, not code)
+---
 
-- **App icon** — 512 × 512 PNG, 32-bit, no transparency
-- **Feature graphic** — 1024 × 500 PNG or JPG, shown at the top of your listing
+## Brand assets
+
+### App icon — `icon-512.png` ✅ ready
+
+512 × 512, 32-bit PNG, 15 KB (well under Play's 1 MB limit). Uploadable as-is.
+
+Two notes for a future revision, neither blocking:
+
+- **It has its own rounded corners.** Play applies its own corner mask and drop
+  shadow on top, so a baked-in radius can read as double-rounded. Icons usually look
+  cleanest as a full-bleed square, letting Play do the rounding.
+- **The "LOGHY" wordmark at the bottom** disappears at real icon size (48 dp on a
+  home screen — roughly a fingernail). Google's icon guidance advises against text
+  for this reason. The face alone is strong and distinctive enough to carry it.
+
+The warm yellow is a good call — it stands out in a grid of white and blue icons,
+and it contrasts with the app's calm parchment interior rather than competing with it.
+
+### Feature graphic — ⚠️ needs re-export
+
+`brand/cover-1920x1080.png` is the cover art, kept here as the source.
+
+Play's feature graphic must be exactly **1024 × 500** (about 2.05:1). The cover is
+1920 × 1080 (16:9), so it cannot simply be scaled — the proportions differ and a
+naive resize would squash it.
+
+**Please re-export from your design file at 1024 × 500.** The composition is centred
+with generous space, so it should adapt easily: keep "loghy" centred, keep "CREATIVE
+SAFE SPACE" beneath it, and let the parchment field do the rest.
+
+Two things to keep in mind while laying it out:
+
+- Play crops the feature graphic differently across surfaces, and sometimes overlays
+  a play button. **Keep text away from the outer edges and clear of the centre.**
+- It is often shown small. "CREATIVE SAFE SPACE" at its current relative size may
+  become unreadable — consider sizing it up slightly.
+
+Save it here as `feature-graphic-1024x500.png`.
 
 ---
 
@@ -152,8 +188,8 @@ that version is unreadable.
 - [ ] `bundleRelease` built and signed
 - [ ] Privacy policy hosted at a public URL
 - [ ] Data Safety form filled in (see `PLAY_DATA_SAFETY.md`)
-- [ ] App icon 512 × 512
-- [ ] Feature graphic 1024 × 500
+- [x] App icon 512 × 512 — play-assets/icon-512.png
+- [ ] Feature graphic 1024 × 500 — re-export from brand/cover-1920x1080.png
 - [ ] 2–8 phone screenshots (five are in this folder)
 - [ ] Short and full description
 - [ ] Content rating questionnaire
