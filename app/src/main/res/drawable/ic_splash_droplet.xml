@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Splash mark: the ink companion alone on the parchment sheet.
+
+    The splash icon is masked to a centred circle and the outer third is reserved by
+    the platform, so this draws the droplet smaller than the launcher icon does and
+    carries no tray - the window background is already Paper Base, and a groove drawn
+    here would be clipped by the mask.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#0B0A09"
+        android:pathData="M54,32
+            C42.3,32 32.8,40.9 32.8,52.3
+            C32.8,64.4 42.6,74.3 54,74.3
+            C65.4,74.3 75.2,64.4 75.2,52.3
+            C75.2,40.9 65.7,32 54,32 Z" />
+
+    <path
+        android:fillColor="#F4F0EA"
+        android:pathData="M46.7,49.6m-3.5,0a3.5,3.5 0,1 0,7 0a3.5,3.5 0,1 0,-7 0" />
+    <path
+        android:fillColor="#F4F0EA"
+        android:pathData="M61.3,49.6m-3.5,0a3.5,3.5 0,1 0,7 0a3.5,3.5 0,1 0,-7 0" />
+    <path
+        android:fillColor="#F4F0EA"
+        android:pathData="M54,59.4m-1.8,0a1.8,1.8 0,1 0,3.6 0a1.8,1.8 0,1 0,-3.6 0" />
+</vector>

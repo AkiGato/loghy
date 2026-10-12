@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Legacy round launcher icon for API 24-25, which predate adaptive icons.
+
+    Same parchment tile and ink droplet as the adaptive version, but drawn to fill the
+    canvas instead of leaving the 18dp adaptive bleed, since nothing masks this one.
+    API 26+ uses mipmap-anydpi-v26/ic_launcher.xml instead.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Parchment tile -->
+    <path
+        android:fillColor="#F4F0EA"
+        android:pathData="M18,4h72a14,14 0,0 1,14 14v72a14,14 0,0 1,-14 14h-72a14,14 0,0 1,-14 -14v-72a14,14 0,0 1,14 -14z" />
+
+    <!-- Debossed groove, bottom-right edge glow then top-left inner shadow -->
+    <path
+        android:fillColor="#FFFDF8"
+        android:pathData="M55.4,55.4m-41,0a41,41 0,1 0,82 0a41,41 0,1 0,-82 0" />
+    <path
+        android:fillColor="#D6CFC2"
+        android:pathData="M52.6,52.6m-41,0a41,41 0,1 0,82 0a41,41 0,1 0,-82 0" />
+    <path
+        android:fillColor="#EFE9DF"
+        android:pathData="M54,54m-39.5,0a39.5,39.5 0,1 0,79 0a39.5,39.5 0,1 0,-79 0" />
+
+    <!-- Ink droplet companion -->
+    <path
+        android:fillColor="#0B0A09"
+        android:pathData="M54,23
+            C37.5,23 24,35.6 24,51.8
+            C24,69 37.8,83 54,83
+            C70.2,83 84,69 84,51.8
+            C84,35.6 71.5,23 54,23 Z" />
+
+    <path
+        android:fillColor="#F4F0EA"
+        android:pathData="M43.7,47.6m-5,0a5,5 0,1 0,10 0a5,5 0,1 0,-10 0" />
+    <path
+        android:fillColor="#F4F0EA"
+        android:pathData="M64.3,47.6m-5,0a5,5 0,1 0,10 0a5,5 0,1 0,-10 0" />
+    <path
+        android:fillColor="#F4F0EA"
+        android:pathData="M54,61.4m-2.6,0a2.6,2.6 0,1 0,5.2 0a2.6,2.6 0,1 0,-5.2 0" />
+</vector>

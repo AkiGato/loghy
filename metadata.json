@@ -1,0 +1,6 @@
+{
+  "name": "Loghy",
+  "description": "A private brainstorming and lateral thinking companion that tests ideas using the Socratic method, direct SWOT breakdowns, actionable weakness and threat solutions, and relevant reading sources, with zero AI training on user ideas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

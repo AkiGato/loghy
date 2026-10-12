@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Themed ("monochrome") icon layer.
+
+    The launcher keeps only this layer's alpha channel and tints it with the system
+    palette, so the eyes and mouth cannot be painted in Paper Base the way the colour
+    foreground paints them - they have to be actual holes, or the droplet flattens into
+    a featureless blob whenever themed icons are switched on.
+
+    One path, evenOdd fill: the body outline encloses three counter-shapes, which the
+    rule punches out.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M54,30
+            C40.5,30 29.5,40.3 29.5,53.5
+            C29.5,67.5 40.8,79 54,79
+            C67.2,79 78.5,67.5 78.5,53.5
+            C78.5,40.8 68.2,30 54,30 Z
+            M45.6,46.1
+            a4.1,4.1 0,1 0,0 8.2
+            a4.1,4.1 0,1 0,0 -8.2 Z
+            M62.4,46.1
+            a4.1,4.1 0,1 0,0 8.2
+            a4.1,4.1 0,1 0,0 -8.2 Z
+            M54,59.4
+            a2.1,2.1 0,1 0,0 4.2
+            a2.1,2.1 0,1 0,0 -4.2 Z" />
+</vector>
